@@ -29,9 +29,10 @@ npm run watch
 # Serve
 php artisan serve
 
-or
+# or
 
 # If have virtual host
-localhost/graduationbook/public / graduationbook.co
+localhost/graduationbook/public
+graduationbook.co
 
 ```
