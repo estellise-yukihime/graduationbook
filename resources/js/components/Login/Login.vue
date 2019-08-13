@@ -2,7 +2,7 @@
     <div>
         <div class="background">
           <router-view/>
-          <img v-for="image in images" :key="image.id" :src="image.src" ref="images" alt="image">
+          <img v-for="image in images" :key="image.id" :src="image.src" ref="images" alt="image"/>
         </div>
     </div>
 </template>
@@ -94,7 +94,7 @@ import { setTimeout } from 'timers';
   width: 100%;
       
   /* Set up positioning */
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   

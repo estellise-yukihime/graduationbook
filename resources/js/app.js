@@ -29,21 +29,22 @@ Vue.component('login', require('./components/Login/Login.vue').default);
 /**/
 const routes = [
     {
-        path: '/',
+        path: '/login',
+        // name: 'log',
         component: require('./components/Login/Login.vue').default,
         children: [
             {
                 path: '',
-                name: 'sign-in',
+                name: 'signin',
                 component: require('./components/Login/SignIn.vue').default
             },
             {
-                path: "/signup",
-                name: "sign-up",
-                component: require('./components/ExampleComponent.vue').default
+                path: 'signup',
+                name: 'signup',
+                component: require('./components/Login/SignUp.vue').default
             }
         ]
-    }    
+    }
 ];
 
 
